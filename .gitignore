@@ -1,3 +1,13 @@
+# Python and generated artifacts
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+storage/*
+!storage/.gitkeep
+
 # Logs
 logs
 *.log

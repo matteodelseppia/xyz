@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ publication.title }} · matteodelseppia.xyz</title>
+  <link rel="stylesheet" href="{{ asset_url }}" integrity="sha256-{{ asset_integrity }}">
+</head>
+<body>
+  <header>
+    <a class="site-title" href="/">matteodelseppia.xyz</a>
+    <time datetime="{{ publication.publication_date }}">{{ publication.publication_date.strftime('%B %-d, %Y') }}</time>
+  </header>
+  <main>
+    <h1>{{ publication.title }}</h1>
+    <p class="introduction">{{ publication.introduction }}</p>
+    {% if updates %}
+    <ol class="updates">
+      {% for update in updates %}
+      <li>
+        <h2><a href="{{ update.url }}" rel="noopener noreferrer" target="_blank">{{ update.heading }}</a></h2>
+        <p>{{ update.description }}</p>
+        <p class="why"><strong>Why read:</strong> {{ update.why_read }}</p>
+        <a class="source" href="{{ update.url }}" rel="noopener noreferrer" target="_blank">Read at {{ update.source_name }} <span aria-hidden="true">↗</span></a>
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p class="empty">No relevant updates were found today.</p>
+    {% endif %}
+  </main>
+  <nav aria-label="Daily publications">
+    {% if previous_date %}<a rel="prev" href="/days/{{ previous_date }}/">← {{ previous_date }}</a>{% endif %}
+    {% if next_date %}<a rel="next" href="/days/{{ next_date }}/">{{ next_date }} →</a>{% endif %}
+  </nav>
+  <footer>Brief original annotations. All links lead to their sources.</footer>
+</body>
+</html>

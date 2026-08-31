@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison's Weblog",
+      "description": "Notes on AI, data tooling, Python, and the open web.",
+      "feed_url": "https://simonwillison.net/atom/everything/"
+    },
+    {
+      "id": "julia-evans",
+      "name": "Julia Evans",
+      "description": "Clear explanations of systems, networking, and developer tools.",
+      "feed_url": "https://jvns.ca/atom.xml"
+    },
+    {
+      "id": "martin-fowler",
+      "name": "Martin Fowler",
+      "description": "Software architecture, delivery, and engineering practice.",
+      "feed_url": "https://martinfowler.com/feed.atom"
+    }
+  ]
+}
