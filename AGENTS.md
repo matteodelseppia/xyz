@@ -11,8 +11,8 @@ This repository implements the design in `docs/detailed-design.md`.
 - [x] Implement the read-only Bun server with pointer/hash verification, cache policy, and security headers.
 - [x] Add deterministic fixtures, Python and Bun tests, static checks, and cost-free CI.
 - [x] Resolve lint/type/test findings; Python tests, Python lint/types, TypeScript types, Bun tests, fixture publication, live HTTP smoke test, and dependency audit pass locally.
-- [ ] Build and smoke-test both Docker images (local Docker Hub pulls timed out; verify through GitHub CI).
-- [ ] Push a branch and verify CI on GitHub (no CD).
+- [x] Build both Docker images in GitHub CI (local Docker Hub pulls timed out, but the remote Buildx job passed).
+- [x] Push `feat/one-shot-implementation`, open PR #1, and verify Python, TypeScript, and image CI jobs. No CD was added.
 
 ## Working rules
 
