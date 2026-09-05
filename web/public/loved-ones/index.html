@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Loved ones</title>
+  <link rel="stylesheet" href="/loved-ones/site.css">
+  <script src="/loved-ones/filter.js" defer></script>
+</head>
+<body>
+  <header>
+    <span>loved ones</span>
+    <a href="/">digest</a>
+  </header>
+  <main>
+    <p class="intro">Selected writing I return to or recommend.</p>
+    <nav class="tag-filter" aria-label="Filter loved ones by tag">
+      <a href="/loved-ones/" data-tag-link="">all <span>5</span></a>
+      <a href="?tag=delivery" data-tag-link="delivery">delivery <span>3</span></a>
+      <a href="?tag=engineering-leadership" data-tag-link="engineering-leadership">engineering leadership <span>2</span></a>
+      <a href="?tag=decision-making" data-tag-link="decision-making">decision-making <span>2</span></a>
+      <a href="?tag=distributed-systems" data-tag-link="distributed-systems">distributed systems <span>1</span></a>
+      <a href="?tag=ai" data-tag-link="ai">AI <span>1</span></a>
+    </nav>
+    <p class="filter-result" data-filter-result aria-live="polite"></p>
+    <ol class="articles">
+      <li data-tags="delivery engineering-leadership">
+        <article>
+          <h1><a href="https://www.seangoedecke.com/how-to-ship" rel="noopener noreferrer" target="_blank">How I ship projects at big tech companies</a></h1>
+          <p>An unusually concrete look at the ownership, sequencing, and communication needed to bring a large project across the finish line.</p>
+          <ul class="tags"><li><a href="?tag=delivery">delivery</a></li><li><a href="?tag=engineering-leadership">engineering leadership</a></li></ul>
+        </article>
+      </li>
+      <li data-tags="delivery decision-making">
+        <article>
+          <h1><a href="https://www.seangoedecke.com/getting-things-done/" rel="noopener noreferrer" target="_blank">Getting things “done” in large tech companies</a></h1>
+          <p>A useful corrective to treating constant activity as impact, with a clear argument for finishing the work that matters and moving on.</p>
+          <ul class="tags"><li><a href="?tag=delivery">delivery</a></li><li><a href="?tag=decision-making">decision-making</a></li></ul>
+        </article>
+      </li>
+      <li data-tags="distributed-systems">
+        <article>
+          <h1><a href="https://overreacted.io/there-are-no-instances-in-atproto/" rel="noopener noreferrer" target="_blank">There Are No Instances in atproto</a></h1>
+          <p>A lucid conceptual map of atproto that separates data hosting from aggregation, making an unfamiliar social protocol much easier to reason about.</p>
+          <ul class="tags"><li><a href="?tag=distributed-systems">distributed systems</a></li></ul>
+        </article>
+      </li>
+      <li data-tags="ai delivery">
+        <article>
+          <h1><a href="https://blog.pragmaticengineer.com/the-pulse-we-need-to-talk-about-migrations-with-ai/" rel="noopener noreferrer" target="_blank">The Pulse: We need to talk about migrations with AI</a></h1>
+          <p>A needed counterweight to impressive AI migration claims, focused on the engineering context and trade-offs those headlines can obscure.</p>
+          <ul class="tags"><li><a href="?tag=ai">AI</a></li><li><a href="?tag=delivery">delivery</a></li></ul>
+        </article>
+      </li>
+      <li data-tags="engineering-leadership decision-making">
+        <article>
+          <h1><a href="https://www.seangoedecke.com/breaking-rules/" rel="noopener noreferrer" target="_blank">How strong engineers break the rules and get away with it</a></h1>
+          <p>A sharp framework for knowing when to bend process deliberately, responsibly, and in service of the work rather than personal convenience.</p>
+          <ul class="tags"><li><a href="?tag=engineering-leadership">engineering leadership</a></li><li><a href="?tag=decision-making">decision-making</a></li></ul>
+        </article>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>

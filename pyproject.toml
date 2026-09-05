@@ -1,0 +1,20 @@
+[tool.uv.workspace]
+members = ["agent"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["agent/tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S", "SIM"]
+ignore = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["xyz_agent"]
+mypy_path = "agent/src"

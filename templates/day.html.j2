@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>{{ publication.title }}</title>
+<link rel="icon" href="{{ asset_urls.icon }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ asset_urls.css }}" integrity="sha256-{{ asset_integrities.css }}">
+<script src="{{ asset_urls.script }}" integrity="sha256-{{ asset_integrities.script }}" defer></script>
+</head><body data-next-run="{{ next_run.isoformat() }}">
+<header class="digest-header"><div class="run"><span>next run</span><strong data-countdown>—</strong></div><div class="run last-run"><span>last run</span><time datetime="{{ generated_at.isoformat() }}" data-local-time>{{ generated_at.strftime('%Y-%m-%d · %H:%M UTC') }}</time></div><a class="trace-link" href="/days/{{ publication.publication_date }}/prompt/">run trace</a></header>
+<main>
+{% if updates %}<ol class="updates">{% for update in updates %}<li><div class="index">0{{ loop.index }}</div><div class="entry"><div class="entry-top"><div class="entry-heading"><time class="published"{% if update.published_at %} datetime="{{ update.published_at.date().isoformat() }}"{% endif %}>{{ update.published_at.strftime('%Y-%m-%d') if update.published_at else 'date unavailable' }}</time><h1><a href="{{ update.url }}" rel="noopener noreferrer" target="_blank">{{ update.heading }}</a></h1></div><a class="arrow" href="{{ update.url }}" rel="noopener noreferrer" target="_blank" aria-label="Read source">↗</a></div><p>{{ update.description }}</p><p class="why">{{ update.why_read }}</p><ul class="keywords">{% for keyword in update.keywords %}<li>{{ keyword }}</li>{% endfor %}</ul><a class="source" href="{{ update.url }}" rel="noopener noreferrer" target="_blank">{{ update.source_name }}</a><details class="verification"><summary>Why was this selected?</summary><ul>{% for verification in update.verifications %}<li><strong>{{ verification.assertion|title }}:</strong> {{ verification.question }}</li>{% endfor %}</ul>{% if update.additional_verification_sources %}<p class="verification-sources">Supporting sources: {% for source in update.additional_verification_sources %}<a href="{{ source.url }}" rel="noopener noreferrer" target="_blank">{{ source.source_name }} ↗</a>{% endfor %}</p>{% endif %}<p class="review-opinion">Reviewer: <em>“{{ update.review.opinion }}”</em>{% if update.review.uncertainty %} Caveat: {{ update.review.uncertainty }}{% endif %}</p></details></div></li>{% endfor %}</ol>{% else %}<p class="empty">Nothing new worth flagging.</p>{% endif %}
+</main>
+<footer class="digest-footer"><a href="/sources">sources</a><a href="/loved-ones/">loved ones</a><a href="https://github.com/matteodelseppia/xyz" rel="noopener noreferrer" target="_blank">github</a></footer>
+</body></html>

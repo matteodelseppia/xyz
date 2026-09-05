@@ -1,0 +1,221 @@
+{
+  "version": 4,
+  "sources": [
+    {
+      "id": "simon-willison",
+      "name": "Simon Willison's Weblog",
+      "description": "Notes on AI, data tooling, Python, and the open web.",
+      "feed_url": "https://simonwillison.net/atom/everything/"
+    },
+    {
+      "id": "julia-evans",
+      "name": "Julia Evans",
+      "description": "Clear explanations of systems, networking, and developer tools.",
+      "feed_url": "https://jvns.ca/atom.xml"
+    },
+    {
+      "id": "martin-fowler",
+      "name": "Martin Fowler",
+      "description": "Software architecture, delivery, and engineering practice.",
+      "feed_url": "https://martinfowler.com/feed.atom"
+    },
+    {
+      "id": "microsoft-devops-blog",
+      "name": "Microsoft DevOps Blog",
+      "description": "Azure DevOps, developer productivity, and delivery updates.",
+      "feed_url": "https://devblogs.microsoft.com/devops/feed/"
+    },
+    {
+      "id": "codeberg-blog",
+      "name": "Codeberg Blog",
+      "description": "Updates from the nonprofit, federated code-hosting platform.",
+      "feed_url": "https://blog.codeberg.org/feeds/all.atom.xml"
+    },
+    {
+      "id": "stuff-with-stuff",
+      "name": "Stuff With Stuff",
+      "description": "Bob Nystrom's writing on programming languages and software design.",
+      "feed_url": "https://journal.stuffwithstuff.com/atom.xml"
+    },
+    {
+      "id": "pragmatic-engineer",
+      "name": "The Pragmatic Engineer",
+      "description": "Engineering management, teams, and the software industry.",
+      "feed_url": "https://blog.pragmaticengineer.com/rss/"
+    },
+    {
+      "id": "dan-luu",
+      "name": "Dan Luu",
+      "description": "Essays on systems, computing, and technology.",
+      "feed_url": "https://danluu.com/atom.xml"
+    },
+    {
+      "id": "overreacted",
+      "name": "Overreacted",
+      "description": "Dan Abramov's writing on JavaScript, React, and programming.",
+      "feed_url": "https://overreacted.io/rss.xml"
+    },
+    {
+      "id": "microsoft-devblogs",
+      "name": "Microsoft DevBlogs",
+      "description": "Developer-platform news and engineering articles from Microsoft.",
+      "feed_url": "https://devblogs.microsoft.com/feed/"
+    },
+    {
+      "id": "fgiesen",
+      "name": "The ryg Blog",
+      "description": "Fabian Giesen's graphics, performance, and systems writing.",
+      "feed_url": "https://fgiesen.wordpress.com/feed/"
+    },
+    {
+      "id": "mit-technology-review-ai",
+      "name": "MIT Technology Review: AI",
+      "description": "Reporting and analysis from MIT Technology Review's AI topic.",
+      "feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/"
+    },
+    {
+      "id": "ai-now-institute",
+      "name": "AI Now Institute",
+      "description": "Research and policy analysis on the social implications of AI.",
+      "feed_url": "https://ainowinstitute.org/feed/"
+    },
+    {
+      "id": "chip-huyen",
+      "name": "Chip Huyen",
+      "description": "Writing on machine learning systems, AI, and data.",
+      "feed_url": "https://huyenchip.com/feed.xml"
+    },
+    {
+      "id": "lilian-weng",
+      "name": "Lilian Weng",
+      "description": "Technical notes on machine learning and AI research.",
+      "feed_url": "https://lilianweng.github.io/index.xml"
+    },
+    {
+      "id": "hamel-husain",
+      "name": "Hamel Husain",
+      "description": "Practical writing on AI, evaluation, and machine learning systems.",
+      "feed_url": "https://hamel.dev/index.xml"
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "description": "Product, research, and company news from OpenAI.",
+      "feed_url": "https://openai.com/news/"
+    },
+    {
+      "id": "claude-blog",
+      "name": "Claude Blog",
+      "description": "Product guidance and updates for building with Claude.",
+      "feed_url": "https://claude.com/blog"
+    },
+    {
+      "id": "anthropic-news",
+      "name": "Anthropic News",
+      "description": "News, research, and product updates from Anthropic.",
+      "feed_url": "https://www.anthropic.com/news"
+    },
+    {
+      "id": "opencode-changelog",
+      "name": "OpenCode Changelog",
+      "description": "Release notes and product updates from OpenCode.",
+      "feed_url": "https://opencode.ai/changelog"
+    },
+    {
+      "id": "pi-news",
+      "name": "Pi News",
+      "description": "News and release updates from Pi.",
+      "feed_url": "https://pi.dev/news.xml"
+    },
+    {
+      "id": "nvidia-agentic-ai",
+      "name": "NVIDIA Agentic AI",
+      "description": "NVIDIA coverage of agentic AI, tooling, and deployment.",
+      "feed_url": "https://blogs.nvidia.com/blog/tag/agentic-ai/"
+    },
+    {
+      "id": "ibm-developer-ai",
+      "name": "IBM Developer: Artificial Intelligence",
+      "description": "Technical AI articles and implementation guidance from IBM Developer.",
+      "feed_url": "https://developer.ibm.com/technologies/artificial-intelligence/articles/"
+    },
+    {
+      "id": "sean-goedecke",
+      "name": "Sean Goedecke",
+      "description": "Writing on software engineering, AI, and the technology industry.",
+      "feed_url": "https://www.seangoedecke.com/rss.xml"
+    },
+    {
+      "id": "george-mandis",
+      "name": "George Mandis",
+      "description": "Notes and essays on technology, the web, and creative work.",
+      "feed_url": "https://george.mand.is/archives/"
+    },
+    {
+      "id": "yegge-essentials",
+      "name": "Yegge Essentials",
+      "description": "Essays and practical ideas about technology, startups, and AI.",
+      "feed_url": "https://yegge.ai/essentials"
+    },
+    {
+      "id": "cursor-blog",
+      "name": "Cursor Blog",
+      "description": "Product, research, and engineering updates from Cursor.",
+      "feed_url": "https://cursor.com/en-US/blog"
+    },
+    {
+      "id": "inference-review",
+      "name": "Inference Review",
+      "description": "Analysis and commentary on AI models, infrastructure, and the industry.",
+      "feed_url": "https://inference-review.com"
+    },
+    {
+      "id": "mitchell-hashimoto",
+      "name": "Mitchell Hashimoto",
+      "description": "Writing on programming languages, developer tools, and software systems.",
+      "feed_url": "https://mitchellh.com/writing"
+    },
+    {
+      "id": "geohot-blog",
+      "name": "geohot Blog",
+      "description": "George Hotz's writing on systems, AI, and technology.",
+      "feed_url": "https://geohot.github.io/blog/"
+    },
+    {
+      "id": "bun-in-rust",
+      "name": "Bun: Bun in Rust",
+      "description": "Bun's account of rewriting its JavaScript runtime in Rust.",
+      "feed_url": "https://bun.com/blog/bun-in-rust"
+    },
+    {
+      "id": "wheres-youred-at",
+      "name": "Where's Your Ed At",
+      "description": "Ed Zitron's commentary on technology, media, and the AI industry.",
+      "feed_url": "https://www.wheresyoured.at"
+    },
+    {
+      "id": "lennys-newsletter",
+      "name": "Lenny's Newsletter",
+      "description": "Product, growth, and technology-industry insights.",
+      "feed_url": "https://www.lennysnewsletter.com"
+    },
+    {
+      "id": "dhh-world",
+      "name": "DHH's World",
+      "description": "David Heinemeier Hansson's writing on software, business, and technology.",
+      "feed_url": "https://world.hey.com/dhh"
+    },
+    {
+      "id": "daniel-stenberg",
+      "name": "Daniel Stenberg",
+      "description": "Writing from curl's founder on open source, networking, and software.",
+      "feed_url": "https://daniel.haxx.se/blog/"
+    },
+    {
+      "id": "mozilla-blog",
+      "name": "Mozilla Blog",
+      "description": "News and perspectives from Mozilla on the web, browsers, and AI.",
+      "feed_url": "https://blog.mozilla.org/en/"
+    }
+  ]
+}
