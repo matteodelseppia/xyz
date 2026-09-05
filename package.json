@@ -1,0 +1,13 @@
+{
+  "name": "matteodelseppia-xyz",
+  "private": true,
+  "workspaces": ["pi-extension", "web"],
+  "scripts": {
+    "check": "bun run --cwd pi-extension check && bun run --cwd web check",
+    "test": "bun test pi-extension/tests web/tests"
+  },
+  "devDependencies": {
+    "@types/bun": "1.2.23",
+    "typescript": "5.9.3"
+  }
+}

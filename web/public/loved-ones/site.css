@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light;
+  --ink: #fffdf5;
+  --muted: #f5edff;
+  --paper: #6b50ff;
+  --panel: #fffdf533;
+  --mint: #00ffb2;
+  --pink: #ff7bf5;
+  --lime: #ecfd65;
+  --line: #fffdf559;
+  font-family: "JetBrains Mono", Menlo, "SFMono-Regular", monospace;
+}
+
+* { box-sizing: border-box; }
+html {
+  min-height: 100%;
+  background-color: var(--paper);
+  background-image: radial-gradient(circle at 50% -28rem, #ff7bf599 0%, #ff7bf500 70%);
+  background-repeat: no-repeat;
+  background-size: max(80rem, 100vw) 80rem;
+}
+body {
+  max-width: 58rem;
+  margin: auto;
+  padding: 1.25rem;
+  color: var(--ink);
+  font-size: .9rem;
+  line-height: 1.45;
+}
+a { color: var(--ink); text-decoration-color: #fffdf5bf; text-underline-offset: .18em; }
+header { align-items: center; display: flex; font-size: .8rem; justify-content: space-between; letter-spacing: .06em; text-transform: uppercase; }
+main { margin: 4rem 0; }
+.intro, .filter-result { color: var(--muted); max-width: 38rem; }
+.tag-filter { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.5rem 0; }
+.tag-filter a, .tags a {
+  background: var(--panel);
+  border: 1px solid var(--ink);
+  border-radius: 99px;
+  color: var(--ink);
+  font-size: .7rem;
+  padding: .18rem .55rem;
+  text-decoration: none;
+}
+.tag-filter a[aria-current="true"] { background: var(--mint); border-color: #201f26; color: #201f26; }
+.tag-filter span { color: var(--muted); font-variant-numeric: tabular-nums; }
+.tag-filter a[aria-current="true"] span { color: inherit; }
+.filter-result { display: none; margin: 1.5rem 0 0; }
+.articles { list-style: none; margin: 1.5rem 0; padding: 0; }
+.articles > li { border-top: 2px solid var(--line); padding: 1.35rem 0; }
+.articles > li[hidden] { display: none; }
+h1 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.22rem;
+  font-weight: 800;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+  margin: 0;
+}
+.articles p { font-size: .95rem; margin: .65rem 0; max-width: 42rem; }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; margin: 1rem 0 0; padding: 0; }
+.tags a { background: var(--lime); border-color: #201f26; color: #201f26; }
+
+@media (max-width: 38rem) {
+  body { padding: 1rem; }
+  main { margin: 2.5rem 0; }
+}
